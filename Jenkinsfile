@@ -5,7 +5,7 @@ pipeline {
     }
     environment {
         GIT_REPO_URL = 'https://github.com/kustav123/demo.git'
-        GIT_BRANCH = 'master'
+        GIT_BRANCH = 'main'
         DOCKER_IMAGE = 'repo.kustav.co.in/app/'
     }
 
