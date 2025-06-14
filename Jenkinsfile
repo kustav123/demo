@@ -6,7 +6,7 @@ pipeline {
     environment {
         GIT_REPO_URL = 'https://github.com/kustav123/demo.git'
         GIT_BRANCH = 'main'
-        DOCKER_IMAGE = 'repo.kustav.co.in/app/'
+        DOCKER_IMAGE = 'repo.kustav.co.in/app/app'
     }
 
     stages {
