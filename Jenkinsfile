@@ -44,7 +44,6 @@ pipeline {
                 script {
                     def commitId = sh(script: "git rev-parse --short HEAD", returnStdout: true).trim()
                     def fullTag = "${DOCKER_IMAGE}:${commitId}"
-                    def processorTag = "${PROCESSOR_IMAGE}:${commitId}"
                     sh """
                         export fullTag=${fullTag}
                         docker compose up -d
